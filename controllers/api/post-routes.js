@@ -57,7 +57,7 @@ router.post('/',(req, res) => {
 });
 
 // update post
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id', (req, res) => {
     Post.update(req.body,
         {
             where: {

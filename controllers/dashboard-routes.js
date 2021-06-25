@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { Post, User, Comment } = require('../../models');
-const sequelize = require('../../config/connection');
+const { Post, User, Comment } = require('../models');
+const sequelize = require('../config/connection');
 
 router.get('/', (req, res) => {
 
@@ -82,4 +82,4 @@ router.get('/new', (req, res) => {
     res.render('add-post');
 });
 
-module.exports - router;
+module.exports=router;

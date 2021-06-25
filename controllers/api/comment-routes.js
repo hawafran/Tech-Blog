@@ -37,7 +37,7 @@ router.post('/',(req, res) => {
 });
 
 // update Comment
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id', (req, res) => {
     Comment.update(req.body,
         {
             where: {
